@@ -10,7 +10,7 @@ namespace CurrencyChange
     {
         void PrintOldCurrency(ref decimal currency, ref string currencyName) => Console.WriteLine("Old Currency From: " + currency + " " + currencyName);
 
-        public void ChangeToEuro(ref decimal currency,ref string signature)
+        public void ChangeToEuro(ref decimal currency,ref string signature, out string result)
         {
 
             PrintOldCurrency(ref currency, ref signature);
@@ -26,8 +26,7 @@ namespace CurrencyChange
 
             signature = "EURO";
 
-            Console.WriteLine("Current Currency : " + currency + " " + signature);
-            Console.WriteLine();
+            result = ("Current Currency : " + currency + " " + signature);
         }
 
         public void ChangeToUSD(ref decimal currency,ref string signature)
