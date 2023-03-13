@@ -17,7 +17,7 @@ namespace CurrencyChange
 
             if (signature.Equals("USD")) //From USD
             {
-                currency *= 0.93m;
+                currency *= 0.9397m;
             }
             else if(signature.Equals("JPY")) //FROM JAPANESE YEN
             {
@@ -35,7 +35,7 @@ namespace CurrencyChange
 
             if (signature.Equals("EURO")) //From EURO
             {
-                currency *= 1.07m;
+                currency *= 1.0642m;
             }
             else if (signature.Equals("JPY")) //FROM JAPANESE YEN
             {
